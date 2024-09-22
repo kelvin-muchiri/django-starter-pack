@@ -1,6 +1,6 @@
-# Sophia
+# Django Starter Pack
 
-A platform where students share study documents.
+DjangoStarterPack is a powerful, ready-to-use collection of boilerplate code and configurations designed to save you days of setting up new Django projects.
 
 ## Getting Started
 
