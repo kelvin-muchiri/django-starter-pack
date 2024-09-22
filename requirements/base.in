@@ -1,0 +1,8 @@
+django
+django-anymail[mailjet]
+django-redis
+django-storages[boto3]
+celery
+psycopg[binary]
+python-decouple
+redis

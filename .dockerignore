@@ -1,0 +1,9 @@
+# ignore everthing
+**
+# allow the following
+!backend
+!requirements
+!manage.py
+# we finally again ignore the following from the folders allowed above
+**/*test
+**/*__pycache__

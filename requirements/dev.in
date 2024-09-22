@@ -1,0 +1,5 @@
+-r base.in
+
+coverage
+pre-commit
+pytest-django
