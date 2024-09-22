@@ -110,7 +110,7 @@ docker compose exec backend pytest backend/apps/users -vv -o cache_dir=/tmp/pyte
 
 ## Support
 
-[![Buy me a coffee](https://github.com/user-attachments/assets/5f78b888-6f6c-4f9e-bc19-64fee8a99b16)](https://ko-fi.com/kelvinmuchiri)
+[![Buy me a coffee](https://github.com/user-attachments/assets/4aa1f078-853b-4c65-a485-a440b7f3b936)](https://ko-fi.com/kelvinmuchiri)
 
 ## License
 
