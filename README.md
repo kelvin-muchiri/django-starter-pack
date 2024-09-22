@@ -111,3 +111,7 @@ docker compose exec backend pytest backend/apps/users -vv -o cache_dir=/tmp/pyte
 ## Support
 
 [![Buy me a coffee](https://github.com/user-attachments/assets/5f78b888-6f6c-4f9e-bc19-64fee8a99b16)](https://ko-fi.com/kelvinmuchiri)
+
+## License
+
+[MIT License](https://github.com/kelvin-muchiri/django-starter-pack/blob/main/LICENSE)
