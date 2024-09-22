@@ -107,3 +107,7 @@ To run tests on a specific module
 ```sh
 docker compose exec backend pytest backend/apps/users -vv -o cache_dir=/tmp/pytest_cache
 ```
+
+## Support
+
+[![Buy me a coffee](https://github.com/user-attachments/assets/5f78b888-6f6c-4f9e-bc19-64fee8a99b16)](https://ko-fi.com/kelvinmuchiri)
