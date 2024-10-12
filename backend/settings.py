@@ -128,6 +128,16 @@ USE_TZ = True
 USE_S3 = config("USE_S3", default=True, cast=bool)
 
 if USE_S3:
+    STORAGES = {
+        "default": {
+            "BACKEND": "sophia.libs.storages.MediaStorage",
+            "OPTIONS": {},
+        },
+        "staticfiles": {
+            "BACKEND": "sophia.libs.storages.StaticStorage",
+            "OPTIONS": {},
+        },
+    }
     AWS_ACCESS_KEY_ID = config("AWS_ACCESS_KEY_ID", default=None)
     AWS_SECRET_ACCESS_KEY = config("AWS_SECRET_ACCESS_KEY", default=None)
     AWS_STORAGE_BUCKET_NAME = config("AWS_STORAGE_BUCKET_NAME", default=None)
@@ -138,11 +148,9 @@ if USE_S3:
     AWS_STATIC_LOCATION = "static"
     AWS_DEFAULT_ACL = None
     AWS_S3_REGION_NAME = config("AWS_S3_REGION_NAME", default="us-east-1")
-    STATICFILES_STORAGE = "backend.libs.storages.StaticStorage"
     STATIC_URL = f"https://{AWS_S3_CUSTOM_DOMAIN}/{AWS_STATIC_LOCATION}/"
     AWS_MEDIA_LOCATION = "media"
     MEDIA_URL = f"https://{AWS_S3_CUSTOM_DOMAIN}/{AWS_MEDIA_LOCATION}/"
-    DEFAULT_FILE_STORAGE = "backend.libs.storages.MediaStorage"
 else:
     STATIC_URL = "static/"
     STATIC_ROOT = os.path.join(BASE_DIR, "static")
