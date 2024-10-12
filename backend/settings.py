@@ -179,7 +179,7 @@ CACHES = {
 CELERY_BROKER_URL = config("CELERY_BROKER_URL", default="redis://redis:6379/0")
 
 # Email
-EMAIL_BACKEND = "anymail.backends.mailgun.EmailBackend"
+EMAIL_BACKEND = "anymail.backends.mailjet.EmailBackend"
 
 ANYMAIL = {
     "MAILJET_API_KEY": config("MAILJET_API_KEY", default=""),
