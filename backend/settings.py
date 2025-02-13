@@ -130,7 +130,7 @@ USE_S3 = config("USE_S3", default=True, cast=bool)
 if USE_S3:
     STORAGES = {
         "default": {
-            "BACKEND": "sophia.libs.storages.MediaStorage",
+            "BACKEND": "sophia.libs.storages.PublicMediaStorage",
             "OPTIONS": {},
         },
         "staticfiles": {
