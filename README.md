@@ -1,6 +1,6 @@
 # Django Starter Pack
 
-![Django Starter Pack](https://github.com/user-attachments/assets/a35a838d-ac22-4bdb-9099-5027842223e3)
+![Django Starter Pack](https://github.com/user-attachments/assets/e132dbee-d531-460b-a545-7ca11aa17191)
 
 DjangoStarterPack is a powerful, ready-to-use collection of boilerplate code and configurations designed to save you days of setting up new Django projects.
 
