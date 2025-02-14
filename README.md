@@ -4,6 +4,16 @@
 
 DjangoStarterPack is a powerful, ready-to-use collection of boilerplate code and configurations designed to save you days of setting up new Django projects.
 
+## Components
+
+- **Django**: A high-level Python web framework that encourages rapid development and clean, pragmatic design.
+- **Docker**: Containerizes the entire stack, ensuring consistency across development, testing, and production environments..
+- **PostgreSQL**: A powerful, ACID-compliant relational database with advanced features like JSONB support, full-text search, and robust concurrency handling.
+- **Redis**: An in-memory data structure store used for caching, real-time analytics, and message brokering.
+- **Celery**: A distributed task queue used for handling asynchronous tasks and background job processing.
+- **Amazon S3**: A scalable cloud storage service used for storing and serving static and media files.
+- **Mailjet**: An email delivery service for sending transactional and marketing emails with high deliverability.
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
