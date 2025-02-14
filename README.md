@@ -6,13 +6,13 @@ DjangoStarterPack is a powerful, ready-to-use collection of boilerplate code and
 
 ## Components
 
-- **Django**: A high-level Python web framework that encourages rapid development and clean, pragmatic design.
-- **Docker**: Containerizes the entire stack, ensuring consistency across development, testing, and production environments..
-- **PostgreSQL**: A powerful, ACID-compliant relational database with advanced features like JSONB support, full-text search, and robust concurrency handling.
-- **Redis**: An in-memory data structure store used for caching, real-time analytics, and message brokering.
-- **Celery**: A distributed task queue used for handling asynchronous tasks and background job processing.
-- **Amazon S3**: A scalable cloud storage service used for storing and serving static and media files.
-- **Mailjet**: An email delivery service for sending transactional and marketing emails with high deliverability.
+- **Django**: The go-to Python web framework for building scalable, maintainable applications with built-in ORM, authentication, and security features.
+- **Docker**: Ensures consistency across development, testing, and production environments by containerizing the entire stack.
+- **PostgreSQL**: A robust, ACID-compliant relational database known for its scalability, JSONB support, and strong concurrency handling.
+- **Redis**: A high-performance in-memory store used for caching, real-time data processing, and Celery task brokering.
+- **Celery**: A distributed task queue that enables asynchronous job processing to improve application responsiveness.
+- **Amazon S3**: Scalable cloud storage with seamless integration for serving static and media files.
+- **Mailjet**: A reliable email API for sending transactional and marketing emails with high deliverability.
 
 ## Getting Started
 
@@ -61,7 +61,7 @@ Collect static files
 docker compose exec backend python manage.py collectstatic
 ```
 
-Login into Django app container
+Login into the Django app container
 
 ```sh
 docker compose exec -it backend /bin/sh
@@ -119,6 +119,8 @@ To run tests on a specific module
 ```sh
 docker compose exec backend pytest backend/apps/users -vv -o cache_dir=/tmp/pytest_cache
 ```
+
+To avoid caching issues in Docker, we specify `-o cache_dir=/tmp/pytest_cache`.
 
 ## Support
 
