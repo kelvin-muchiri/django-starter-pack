@@ -18,6 +18,7 @@ FILES=(
   "backend/settings.py"
   "backend/urls.py"
   "backend/wsgi.py"
+  "backend/celery.py"
 )
 
 # Update project name in each file
