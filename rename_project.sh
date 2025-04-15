@@ -24,7 +24,7 @@ FILES=(
 # Update project name in each file
 for FILE in "${FILES[@]}"; do
   if [ -f "$FILE" ]; then
-    sed -i "s/$OLD_NAME/$NEW_NAME/g" "$FILE"
+    sed -i "s/\b$OLD_NAME\b/$NEW_NAME/g" "$FILE"
     echo "Updated $FILE"
   else
     echo "File $FILE not found!"
