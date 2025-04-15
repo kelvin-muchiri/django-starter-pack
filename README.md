@@ -26,6 +26,14 @@ An active python virtual environment. [Learn how to activate virtual environment
 
 [Docker](https://docs.docker.com/engine/install/) and [Docker Compose v2](https://docs.docker.com/compose/migrate/) installed.
 
+### Renaming the project
+
+To rename the Django project from 'backend' to a new name of your choice, you can use the `rename_project.sh` script. This script will update the project name in all necessary files and rename the project directory.
+
+Run the script with the new project name as an argument, like so: `./rename_project.sh my_new_project`.
+
+This will replace all occurrences of "backend" with the new project name in the specified files and rename the `backend` directory to the new project name.
+
 ### Development
 
 #### Setting up the development environment
@@ -121,16 +129,6 @@ docker compose exec backend pytest backend/apps/users -vv -o cache_dir=/tmp/pyte
 ```
 
 To avoid caching issues in Docker, we specify `-o cache_dir=/tmp/pytest_cache`.
-
-## Renaming the Django Project
-
-To rename the Django project from 'backend' to a new name of your choice, you can use the `rename_project.sh` script. This script will update the project name in all necessary files and rename the project directory.
-
-### Usage
-
-Run the script with the new project name as an argument, like so: `./rename_project.sh my_new_project`.
-
-This will replace all occurrences of "backend" with the new project name in the specified files and rename the `backend` directory to the new project name.
 
 ## Support
 
