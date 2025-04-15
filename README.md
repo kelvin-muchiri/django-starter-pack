@@ -32,8 +32,6 @@ To rename the Django project from 'backend' to a new name of your choice, you ca
 
 Run the script with the new project name as an argument, like so: `./rename_project.sh my_new_project`.
 
-This will replace all occurrences of "backend" with the new project name in the specified files and rename the `backend` directory to the new project name.
-
 ### Development
 
 #### Setting up the development environment
